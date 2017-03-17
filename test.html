@@ -1,0 +1,77 @@
+3.设计一个对象，拥有2个方法 push 和 get 
+   push:  要求有一个形参，将该数字进行保存
+   get  :  要求返回一个数字
+    a.按照先进先出的方式   如 push(1) ; push(2)  然后  get(）先得到1 再得到2
+    b.按照先进后出的方式   如 push(1) ; push(2)  然后  get(）先得到2 再得到1
+
+<script>
+	/*var duilie = {
+		dataArr:[],
+		push:function(num){
+			console.log('放入了',num)
+			this.dataArr.push(num)
+		},
+		get:function(){
+			var temp = this.dataArr.shift()
+			console.log('取出了',temp)
+			return temp
+		}
+	}
+	duilie.push(1)
+	duilie.push(2)
+	duilie.push(3)
+	duilie.get()
+	duilie.get()
+	duilie.push(7)
+	duilie.get()
+	duilie.get()*/
+
+	/*var zhan = {
+		dataArr:[],
+		push:function(num){
+			console.log('放入了',num)
+			this.dataArr.push(num)
+		},
+		get:function(){
+			var temp = this.dataArr.pop()
+			console.log('取出了',temp)
+			return temp
+		}
+	}
+	zhan.push(1)
+	zhan.push(2)
+	zhan.push(3)
+	zhan.get()
+	zhan.get()
+	zhan.push(7)
+	zhan.get()
+	zhan.get()*/
+	//console.log(zhan.get())
+	
+	var arr=[4,2,6,7,3,10,8,1]
+	var a=0
+	for(var i=0;i<arr.length-1;i++){
+		for(var j=0;j<arr.length;j++){
+			if(arr[j]<arr[i]){
+					a=arr[i]
+					arr[i]=arr[j]
+					arr[j]=a
+					
+			}
+		}
+	}
+	console.log(arr)
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
